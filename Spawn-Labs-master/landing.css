@@ -1,4 +1,4 @@
- body {
+body {
   overflow-x: hidden;
   margin: 0px;
 }
@@ -93,6 +93,12 @@
 }
 
 /*here the style for feature section ends*/
+
+/* Header begins */
+
+
+/* Header ends */
+
 
 /* Hero section start*/
 /* .h-screen bg-cover bg-center flex items-center{ */

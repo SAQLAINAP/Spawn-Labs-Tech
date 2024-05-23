@@ -6,6 +6,10 @@ body {
     background-color: white;
     overflow-x: hidden;
 }
+h1 {
+text-align: center;
+font-size: 280%;
+  }
 
 /* The p class sets the styles for all paragraph elements */
 p {
@@ -17,7 +21,7 @@ p {
 }
 
 /* The h1,h2 class sets the styles for all h1 and h2 heading elements */
-h1,h2,h3 {
+h2,h3 {
     font-size: 280%;
     padding: 1%;
     margin-bottom: auto;
@@ -32,7 +36,7 @@ h1,h2,h3 {
     background-color: #292929f5;
     height: 50px;
     overflow: auto;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -86,6 +90,7 @@ h1,h2,h3 {
 .team {
     display: flex;
     justify-content: space-around;
+    margin-left: 60px;
 }
 
 /* The .member-image class sets the styles for the team member's image */
