@@ -28,13 +28,21 @@ body {
 
 .algae {
   width: 50%;
-  margin-left: 300px;
+  margin-left: 30%;
+}
+.agri {
+  width: 70%;
+  margin-left: 7%;
 }
 
 .mushroom {
-  margin-right: 5%;
+  width: 50%;
+  margin-left: 25%;
 }
-
+.plastic {
+  width: 50%;
+  margin-left: 7%;
+}
 .picalgae {
   height: 300px;
   width: 400px;
@@ -353,3 +361,5 @@ body {
   background-size: cover;
   background-position: top center;
 }
+
+
