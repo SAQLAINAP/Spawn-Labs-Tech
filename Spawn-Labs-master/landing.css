@@ -1,17 +1,4 @@
-/* .feature-section {
-  background-image: url("background-texture.jpg");
-  background-size: contain;
-}
 
-.carousel slide {
-  background-image: url("background-texture.jpg");
-  background-size: contain;
-}
-
-.testimonial-section {
-  background-image: url("background-texture.jpg");
-  background-size: contain;
-} */
 *{
   position: relative;
 }
@@ -1184,62 +1171,55 @@
 /*footer section start*/
 
 /* The .navbar class sets the styles for the navigation bar */
-.navbar {
+.nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #292929f5;
-  height: 50px;
-  overflow: auto;
-  position: fixed;
+  /* height: 50px; */
+  /* overflow: auto; */
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
   overflow: hidden;
-
+  
 }
 
-/* The .navbar-logo class sets the styles for the logo inside the navigation bar */
-.navbar-logo {
-  height: 75%;
-  width: 2.5%;
-  margin-left: 3.0%;
-}
 
-/* The .nav-links class sets the styles for the container of the navigation links */
-.nav-links {
+
+.navbar-container {
   display: flex;
-  justify-content: flex-end;
-  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensures the navbar takes the full width */
+  padding: 0 20px; /* Optional: add padding for better spacing */
 }
-
 .navbar-logo img {
-  /* Set the height of the image to be 100% of the navbar height */
-  height: 130%;
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }
 
-/* The .nav-links a class sets the styles for the navigation links */
+
 .nav-links a {
   color: #ffffff;
   text-align: center;
   padding: 1px 23px;
   text-decoration: none;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  float: right;
+  display: block;
 }
 
-/* The .nav-links a:hover class sets the styles for the navigation links when they are hovered over */
+
 .nav-links a:hover {
   color: rgb(255, 255, 255);
   background-color: #1b1b1b7f;
-}
-
-/* The .nav class sets the styles for the navigation container */
-
-
-/* The .nav a class sets the styles for the links inside the navigation container */
-.nav a {
-  float: right;
-  display: block;
 }
 
 /* The .footer-main class sets the styles for the main footer */
