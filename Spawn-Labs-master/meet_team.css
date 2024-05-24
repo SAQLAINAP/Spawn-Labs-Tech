@@ -90,8 +90,17 @@ h2,h3 {
 .team {
     display: flex;
     justify-content: space-around;
-    margin-left: 60px;
+    margin-left: 6%;
 }
+
+/* The .team class sets the styles for the team members container */
+.team1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 20%;
+}
+
 
 /* The .member-image class sets the styles for the team member's image */
 .member-image {
@@ -120,7 +129,7 @@ h2,h3 {
 /* The .footer-main class sets the styles for the main footer */
 .footer-main {
     background: #000000;
-    width: 90%;
+    width: 100%;
     height: 50%;
     display: flex;
     justify-content: space-between;
@@ -208,6 +217,7 @@ h2,h3 {
     width: 20%;
     border-radius: 50%;
     align-items: center;
+    padding-top: 20%;
 }
 
 /* The .img-div class sets the styles for the image container */
@@ -233,49 +243,63 @@ h2,h3 {
     display: none;
 }
 
+
+
 .member {
     position: relative;
     flex-shrink: 0;
-    margin-right: 2%;
     scroll-snap-align: start;
-    padding-left: 0%;
+    padding-left: 2.5%;
+    /* margin-right: 30px; */
+    transition: 0.5s;
+    display: inline-block; /* Add this line to make it a horizontal row */
+    width: 17%; /* Adjust the width to fit 5 members in a row */
+    
     
 }
 
 .member img {
-    width: 95%;
-    height: 70%;
+    width: 100%;
+    height: 60%;
     border-radius: 50%;
     object-fit: cover;
-    
 }
 
 .member-info {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 70%;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 50%;  
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    
+    
 }
 
 .member-info .member-name {
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    margin-left: 10%;
 }
+
+
 
 .member-info .member-role {
     font-size: 1.2rem;
     margin-top: 10%;
+    margin-left: 10%;
+    
 }
 
 .member:hover img {
@@ -289,11 +313,85 @@ h2,h3 {
 
 
 .static-member img {
-width: 76%;
-height: 60%;
-margin-top: -3%;
-margin: 3%;
+    width: 76%;
+    height: 60%;
+    margin-top: -3%;
+    margin: 3%;
 }
+
 .first-two {
     margin-top: -3%; /* Adjust this value as needed */
 }
+
+
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 300px) {
+    .member img{
+        width: 50%; /* Show 1 member per row on mobile */
+        height: 50%; /* Show 1 member per row on mobile */        
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .member-info {
+        position: absolute;
+        top: 48%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        width: 160px;
+        height: 160px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;  
+        box-sizing: border-box; 
+    }
+}
+
+
+
+
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 600px) {
+    .member {
+        width: 30%;
+    }
+}
+
+
+
+/* Footer styles */
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-box4, .footer-box5 {
+    margin: 10px 0;
+  }
+  

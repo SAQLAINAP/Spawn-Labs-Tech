@@ -1,3 +1,6 @@
+*{
+  margin: 0px 0px 0px 0px;
+}
 body {
   overflow-x: hidden;
   margin: 0px;
@@ -22,7 +25,7 @@ body {
 
 .col-md-7 h2 {
   margin-left: 25%;
-  font-size: 45px;
+  font-size: 2.5rem;
 }
 
 .col-md-7 p {
@@ -71,11 +74,16 @@ body {
 .nature-para {
   width: 70%;
   margin-left: 8.5%;
+  text-align: justify !important;
 }
 
 .nature-potential h2 {
   margin-left: 7%;
   font-weight: bolder;
+}
+
+.nature-2 h2{
+  margin-left: 17%;
 }
 
 .algae-powerhouse h2 {
@@ -91,19 +99,30 @@ body {
   margin-left: 7%;
 }
 
+.algae-2{
+  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
 .add-cont {
   margin-top: 100px;
   margin-bottom: 100px;
+
 }
 
 .mushroom-cont {
   margin-top: 100px;
   margin-bottom: 100px;
+
 }
 
 .lead {
   word-spacing: 0.05cap;
   text-align: left;
+  text-align: justify !important;
+
 }
 
 .nature-cont {
@@ -115,13 +134,12 @@ body {
   margin-top: 100px;
 }
 
-.intro {
-  margin-top: 5%;
+.intro{
+  text-align: justify;
 }
 
-.intro-para {
-  width: 70%;
-  margin-left: 26%;
+.algae-2 p{
+  margin-right: 0% !important;
 }
 
 .pic-intro {
@@ -313,7 +331,7 @@ body {
   gap: 20%;
   color: #ffffff;
   padding: 3% 5%;
-
+  
 }
 
 /* The .footer-icons class sets the styles for the container of the icons in the footer */
@@ -326,8 +344,7 @@ body {
 /* The .footer-icons a i class sets the styles for the icons in the footer */
 .footer-icons a i {
   color: #ffffff;
-  font-size: 170%;
-  /* Makes the icons white */
+  font-size: 170%; /* Makes the icons white */
 }
 
 /* The .footer-icons a:nth-child(1):hover i class changes the color of the first icon in the footer when it's hovered over */
@@ -349,7 +366,6 @@ body {
 .footer-icons a:nth-child(4):hover i {
   color: #0A66C2;
 }
-
 /* The .footer-space class allows the element to take up the remaining space in the footer */
 .footer-space {
   flex-grow: 1;
@@ -377,6 +393,7 @@ body {
   font-weight: 100;
   font-size: 100%;
   text-align: left;
+  margin: 10px;
 }
 
 /* The .footer-details:hover class changes the color and cursor when the footer details are hovered over */
@@ -391,6 +408,11 @@ body {
   border-radius: 50%;
   align-items: center;
 }
+  .img-div{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
 
 * {
   position: relative;
@@ -403,7 +425,316 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("./images/landingpagebg.png");
+  background-image: url("./images/commonbg.png");
   background-size: cover;
   background-position: top center;
 }
+
+  /* CSS for Desktop */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* CSS for Tablet */
+  @media screen and (max-width: 768px) {
+    .navbar-container {
+      flex-direction: row;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media screen and (max-width: 480px) {
+    .navbar-container {
+      flex-direction: row;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* CSS for Desktop */
+  /* .feature-section .col-md-7 {
+    /* Your desktop styles here */
+  /* } */ 
+  
+  .feature-section .lead {
+    font-size: 1.25rem;
+  }
+  
+  /* CSS for Tablet */
+  @media (max-width: 992px) {
+    .feature-section .col-md-7 {
+      /* Your tablet styles here */
+      order: 1;
+    }
+  
+    .feature-section .col-md-5 {
+      order: 2;
+    }
+  
+    .feature-section .lead {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    .feature-section .col-md-7 {
+      /* Your mobile styles here */
+      order: 1;
+    }
+  
+    .feature-section .col-md-5 {
+      order: 2;
+    }
+  
+    .feature-section .lead {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  /* CSS for Desktop */
+  .feature-section img {
+    width: 100%;
+  }
+  
+  /* CSS for Tablet */
+  @media (max-width: 992px) {
+    .feature-section img {
+      width: 80%; /* Adjust as needed */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    .feature-section img {
+      width: 60%; /* Adjust as needed */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* CSS for Desktop */
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+  }
+  
+  /* CSS for Tablet */
+  @media (max-width: 992px) {
+    h1, h2, h3, h4, h5, h6, p {
+      text-align: center;
+      text-justify: inter-word;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6, p {
+      text-align: left;
+      text-justify: inter-word;
+    }
+  }
+  
+  /* CSS for all screens */
+  .feature-section p {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* CSS for Desktop */
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+  }
+  
+  /* CSS for Tablet */
+  @media (max-width: 992px) {
+    h1, h2, h3, h4, h5, h6, p {
+      text-align: center;
+      text-justify: inter-word;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6, p {
+      text-align: center;
+      text-justify: inter-word;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .feature-section h2 {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto 20px; /* Adjust as needed */
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+  
+    .feature-section p {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto;
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    .feature-section h2 {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto 20px; /* Adjust as needed */
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  
+    .feature-section p {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto;
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* CSS for all screens */
+  .feature-section p, .mushroom-cont p {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* CSS for Desktop */
+  .feature-section h2, .feature-section p, .mushroom-cont h2, .mushroom-cont p {
+    text-align: left;
+  }
+  
+  /* CSS for Tablet */
+  @media (max-width: 992px) {
+    .feature-section h2, .mushroom-cont h2 {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto 20px; /* Adjust as needed */
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+  
+    .feature-section p, .mushroom-cont p {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto;
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    .feature-section h2, .mushroom-cont h2 {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto 20px; /* Adjust as needed */
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  
+    .feature-section p, .mushroom-cont p {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto;
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* CSS for all screens */
+  .feature-section p, .mushroom-cont p {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* CSS for Desktop */
+  .feature-section h2, .feature-section p, .mushroom-cont h2, .mushroom-cont p {
+    text-align: left;
+  }
+  
+  /* CSS for Tablet */
+  @media (max-width: 992px) {
+    .feature-section h2, .mushroom-cont h2 {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto 20px; /* Adjust as needed */
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+  
+    .feature-section p, .mushroom-cont p {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto;
+      padding: 0 15px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media (max-width: 768px) {
+    .feature-section h2, .mushroom-cont h2 {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto 20px; /* Adjust as needed */
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  
+    .feature-section p, .mushroom-cont p {
+      text-align: center;
+      text-justify: inter-word;
+      margin: 0 auto;
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  }
+
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-box4, .footer-box5 {
+    margin: 10px 0;
+  }
