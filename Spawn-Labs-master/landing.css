@@ -100,6 +100,18 @@ body {
   margin-top: 100px;
 }
 
+.intro{
+  margin-top: 5%;
+}
+
+.intro-para{
+  width: 70%;
+  margin-left: 26%;
+}
+
+.pic-intro{
+  margin-left: 10%;
+}
 /*here the style for feature section ends*/
 
 /* Header begins */
