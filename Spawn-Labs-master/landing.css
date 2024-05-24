@@ -3,6 +3,15 @@ body {
   margin: 0px;
 }
 
+
+.proza-libre-regular {
+    font-family: "Proza Libre", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
 /* from here style for feature section starts*/
 .col-md-7 {
   display: flex;
@@ -17,7 +26,7 @@ body {
 }
 
 .col-md-7 p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 .lead {
@@ -47,8 +56,8 @@ body {
 }
 
 .picalgae {
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 600px;
   margin-top: 10px;
   margin-left: 10%;
 }
@@ -61,7 +70,7 @@ body {
 
 .nature-para {
   width: 70%;
-  margin-left: 70px;
+  margin-left: 8.5%;
 }
 
 .nature-potential h2 {
@@ -117,9 +126,11 @@ body {
 
 .pic-intro {
   margin-left: 10%;
+  height: 110%;
+  width: 170%;
 }
 .pic-superfood{
-  height: 500px;
+  height: 400px;
   width: 500px;
 }
 
@@ -180,14 +191,14 @@ body {
 .luk>h1 {
   font-size: 40px;
   font-weight: bold;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Proza Libre', sans-serif;
   padding-top: 5%;
   padding-bottom: 15px;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.497);
 }
 
 .luk>pre {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Proza Libre', sans-serif;
   color: #828282;
   font-size: 24;
 }
@@ -392,7 +403,7 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/landingpagebg.png");
   background-size: cover;
   background-position: top center;
 }
