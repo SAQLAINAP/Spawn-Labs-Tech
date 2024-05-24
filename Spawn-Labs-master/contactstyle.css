@@ -299,3 +299,478 @@ img{
     float: right;
      display:block;
   }
+
+  /* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+/* Adjust body container */
+.bodynew {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 670px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.form button {
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  background: rgb(130, 106, 251);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+#myInput {
+  height: 150px;
+  resize: none;
+}
+
+@media screen and (max-width: 300px) {
+  .header {
+    display :flex;
+    flex-direction: column;
+}
+
+}
+
+/* Tablet view */
+@media screen and (max-width: 1400px) {
+  .image-container img{
+    height:0;
+  }
+}
+
+/* Responsive adjustments */
+
+/* CSS for Desktop */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* CSS for Tablet */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* CSS for Mobile */
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* CSS for Desktop */
+/* .feature-section .col-md-7 {
+  /* Your desktop styles here */
+/* } */ 
+
+.feature-section .lead {
+  font-size: 1.25rem;
+}
+
+/* CSS for Tablet */
+@media (max-width: 992px) {
+  .feature-section .col-md-7 {
+    /* Your tablet styles here */
+    order: 1;
+  }
+
+  .feature-section .col-md-5 {
+    order: 2;
+  }
+
+  .feature-section .lead {
+    font-size: 1.1rem;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  .feature-section .col-md-7 {
+    /* Your mobile styles here */
+    order: 1;
+  }
+
+  .feature-section .col-md-5 {
+    order: 2;
+  }
+
+  .feature-section .lead {
+    font-size: 1rem;
+  }
+}
+
+
+/* CSS for Desktop */
+.feature-section img {
+  width: 100%;
+}
+
+/* CSS for Tablet */
+@media (max-width: 992px) {
+  .feature-section img {
+    width: 80%; /* Adjust as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  .feature-section img {
+    width: 60%; /* Adjust as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* CSS for Desktop */
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+/* CSS for Tablet */
+@media (max-width: 992px) {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    text-justify: inter-word;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: left;
+    text-justify: inter-word;
+  }
+}
+
+/* CSS for all screens */
+.feature-section p {
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* CSS for Desktop */
+h1, h2, h3, h4, h5, h6, p {
+  text-align: left;
+}
+
+/* CSS for Tablet */
+@media (max-width: 992px) {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    text-justify: inter-word;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    text-justify: inter-word;
+  }
+}
+
+@media (max-width: 992px) {
+  .feature-section h2 {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto 20px; /* Adjust as needed */
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .feature-section p {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  .feature-section h2 {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto 20px; /* Adjust as needed */
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .feature-section p {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+}
+
+/* CSS for all screens */
+.feature-section p, .mushroom-cont p {
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* CSS for Desktop */
+.feature-section h2, .feature-section p, .mushroom-cont h2, .mushroom-cont p {
+  text-align: left;
+}
+
+/* CSS for Tablet */
+@media (max-width: 992px) {
+  .feature-section h2, .mushroom-cont h2 {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto 20px; /* Adjust as needed */
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .feature-section p, .mushroom-cont p {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  .feature-section h2, .mushroom-cont h2 {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto 20px; /* Adjust as needed */
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .feature-section p, .mushroom-cont p {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+}
+
+/* CSS for all screens */
+.feature-section p, .mushroom-cont p {
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* CSS for Desktop */
+.feature-section h2, .feature-section p, .mushroom-cont h2, .mushroom-cont p {
+  text-align: left;
+}
+
+/* CSS for Tablet */
+@media (max-width: 992px) {
+  .feature-section h2, .mushroom-cont h2 {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto 20px; /* Adjust as needed */
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .feature-section p, .mushroom-cont p {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 768px) {
+  .feature-section h2, .mushroom-cont h2 {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto 20px; /* Adjust as needed */
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .feature-section p, .mushroom-cont p {
+    text-align: center;
+    text-justify: inter-word;
+    margin: 0 auto;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+  .navbar-logo{
+    width: 0px;
+    height:0px;
+  }
+}
+
+/* 
+@media screen and (max-width: 500px) {
+  .bodynew {
+    flex-direction: column;
+  }
+
+  .navbar-logo img{
+    padding: 25px;
+  }
+
+
+  .image-container, .container {
+    width: 90%;
+    margin: 10px;
+    padding-bottom: 100px; 
+    height: 250%;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    height: 0
+  }
+
+
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .form .column {
+    flex-direction: column;
+  }
+
+  .form button {
+    margin-top: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+} */
+
+/* Footer styles */
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-box4, .footer-box5 {
+  margin: 10px 0;
+}
