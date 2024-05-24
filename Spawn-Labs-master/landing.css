@@ -27,22 +27,25 @@ body {
 }
 
 .algae {
-  width: 50%;
-  margin-left: 30%;
+  width: 70%;
+  margin-left: 20%;
 }
+
 .agri {
   width: 70%;
   margin-left: 7%;
 }
 
 .mushroom {
-  width: 50%;
+  width: 70%;;
   margin-left: 25%;
 }
+
 .plastic {
-  width: 50%;
+  width: 70%;;
   margin-left: 7%;
 }
+
 .picalgae {
   height: 300px;
   width: 400px;
@@ -51,7 +54,9 @@ body {
 }
 
 .mushroom_image {
-  margin-left: 5%;
+  margin-left: 7%;
+  height: 500px;
+  width: 500px;
 }
 
 .nature-para {
@@ -65,11 +70,11 @@ body {
 }
 
 .algae-powerhouse h2 {
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .add-box p {
-  width: 50%;
+  width: 70%;;
   margin-left: 10%;
 }
 
@@ -79,6 +84,7 @@ body {
 
 .add-cont {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .mushroom-cont {
@@ -100,18 +106,28 @@ body {
   margin-top: 100px;
 }
 
-.intro{
+.intro {
   margin-top: 5%;
 }
 
-.intro-para{
+.intro-para {
   width: 70%;
   margin-left: 26%;
 }
 
-.pic-intro{
+.pic-intro {
   margin-left: 10%;
 }
+.pic-superfood{
+  height: 500px;
+  width: 500px;
+}
+
+.precise-img{
+  height: 500px;
+  width: 500px;
+}
+
 /*here the style for feature section ends*/
 
 /* Header begins */
@@ -229,7 +245,7 @@ body {
   width: 100%;
   z-index: 1000;
   overflow: hidden;
-  
+
 }
 
 
@@ -238,16 +254,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Ensures the navbar takes the full width */
-  padding: 0 20px; /* Optional: add padding for better spacing */
+  width: 100%;
+  /* Ensures the navbar takes the full width */
+  padding: 0 20px;
+  /* Optional: add padding for better spacing */
 }
+
 .navbar-logo img {
   object-fit: contain;
   width: 30px;
   height: 30px;
   margin-left: 20px;
   margin-right: 20px;
-  
+
 }
 
 
@@ -283,7 +302,7 @@ body {
   gap: 20%;
   color: #ffffff;
   padding: 3% 5%;
-  
+
 }
 
 /* The .footer-icons class sets the styles for the container of the icons in the footer */
@@ -296,7 +315,8 @@ body {
 /* The .footer-icons a i class sets the styles for the icons in the footer */
 .footer-icons a i {
   color: #ffffff;
-  font-size: 170%; /* Makes the icons white */
+  font-size: 170%;
+  /* Makes the icons white */
 }
 
 /* The .footer-icons a:nth-child(1):hover i class changes the color of the first icon in the footer when it's hovered over */
@@ -318,6 +338,7 @@ body {
 .footer-icons a:nth-child(4):hover i {
   color: #0A66C2;
 }
+
 /* The .footer-space class allows the element to take up the remaining space in the footer */
 .footer-space {
   flex-grow: 1;
@@ -359,10 +380,12 @@ body {
   border-radius: 50%;
   align-items: center;
 }
-*{
+
+* {
   position: relative;
 }
-&::before{
+
+&::before {
   content: '';
   position: absolute;
   top: 0px;
@@ -371,7 +394,5 @@ body {
   left: 0px;
   background-image: url("./images/background.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: top center;
 }
-
-
